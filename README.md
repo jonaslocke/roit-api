@@ -1,3 +1,5 @@
 ## API
+https://roit-api.herokuapp.com/users
 
-https://roit-api.herokuapp.com/
+## API DOCUMENTATION
+https://roit-api.herokuapp.com/swagger
