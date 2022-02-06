@@ -6,46 +6,41 @@ export type UserDocument = User & Document;
 @Schema()
 export class User {
     @Prop()
+    id: string;
+    @Prop()
     name: string;
-
     @Prop()
     age: string;
-
     @Prop()
-    street: string;
-
+    logradouro: string;
+    @Prop()
+    numero: string;
     @Prop()
     cep: string;
-
     @Prop()
-    city: string;
-
+    localidade: string;
+    @Prop()
+    bairro: string;
     @Prop()
     uf: string;
-
     @Prop()
-    ibge_code: string;
-
+    ibge: string;
     @Prop()
-    others_cep: string;
-
+    complemento: string;
     @Prop()
-    git_hub: string;
-
+    outrosCep: string;
     @Prop()
     login: string;
-
     @Prop()
-    id: string;
-
+    gitId: string;
     @Prop()
-    avatar: string;
-
+    avatar_url: string;
+    @Prop()
+    html_url: string;
     @Prop()
     repos: string;
-    
     @Prop()
-    others_git: string;
+    othersGit: string;
 }
 
 export const UserSchema = SchemaFactory.createForClass(User);
