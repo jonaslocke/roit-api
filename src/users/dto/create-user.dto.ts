@@ -7,28 +7,34 @@ export class CreateUserDto {
     age: string;
     //via cep
     @ApiProperty({ type: String, description: 'Rua' })
-    street: string;
+    logradouro: string;
+    @ApiProperty({ type: String, description: 'Número' })
+    numero: string;
     @ApiProperty({ type: String, description: 'CEP' })
     cep: string;
     @ApiProperty({ type: String, description: 'Cidade' })
-    city: string;
+    localidade: string;
+    @ApiProperty({ type: String, description: 'Bairro' })
+    bairro: string;
     @ApiProperty({ type: String, description: 'Estado' })
     uf: string;
     @ApiProperty({ type: String, description: 'Código IBGE' })
-    ibge_code: string;
+    ibge: string;
+    @ApiProperty({ type: String, description: 'Complemento do endereço' })
+    complemento: string;
     @ApiProperty({ type: String, description: 'Complemento' })
-    others_cep: string;
+    outrosCep: string;
     //GitHub webservices
-    @ApiProperty({ type: String, description: 'URL GitHub' })
-    git_hub: string;
     @ApiProperty({ type: String, description: 'Login' })
     login: string;
     @ApiProperty({ type: String, description: 'ID GitHub' })
-    id: string;
+    gitId: string;
     @ApiProperty({ type: String, description: 'Avatar GitHub' })
-    avatar: string;
+    avatar_url: string;
+    @ApiProperty({ type: String, description: 'URL GitHub' })
+    html_url: string;
     @ApiProperty({ type: String, description: 'Repositórios GitHub' })
     repos: string;
     @ApiProperty({ type: String, description: 'GitHub outros' })
-    others_git: string;
+    othersGit: string;
 }
